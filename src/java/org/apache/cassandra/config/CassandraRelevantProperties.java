@@ -518,6 +518,7 @@ public enum CassandraRelevantProperties
     TEST_REUSE_PREPARED("cassandra.test.reuse_prepared", "true"),
     TEST_ROW_CACHE_SIZE("cassandra.test.row_cache_size"),
     TEST_SERIALIZATION_WRITES("cassandra.test-serialization-writes"),
+    TEST_SIGAR_NATIVE_LOGGING("sigar.nativeLogging", "true"),
     TEST_SIMULATOR_DEBUG("cassandra.test.simulator.debug"),
     TEST_SIMULATOR_DETERMINISM_CHECK("cassandra.test.simulator.determinismcheck", "none"),
     TEST_SIMULATOR_LIVENESS_CHECK("cassandra.test.simulator.livenesscheck", "true"),
