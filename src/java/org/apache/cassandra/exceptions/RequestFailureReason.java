@@ -38,6 +38,7 @@ public enum RequestFailureReason
     READ_SIZE                (4),
     NODE_DOWN                (5),
     NOT_CMS                  (6),
+    INVALID_ROUTING          (7)
     ;
 
     public static final Serializer serializer = new Serializer();
@@ -90,6 +91,9 @@ public enum RequestFailureReason
 
         if (t instanceof NotCMSException)
             return NOT_CMS;
+
+        if (t instanceof InvalidRoutingException)
+            return INVALID_ROUTING;
 
         return UNKNOWN;
     }
